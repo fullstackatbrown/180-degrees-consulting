@@ -1,7 +1,13 @@
+import prevClients from './previousClients.png';
+
+
 function PreviousClients(){
-    return <h1>
-  
-    </h1>
+    return <div> <h3>Previous Clients</h3> 
+    <img src={prevClients} alt="previous clients" /> 
+    <button >
+       Learn About Our Services
+    </button>
+    </div>
   }
   
   export default PreviousClients;

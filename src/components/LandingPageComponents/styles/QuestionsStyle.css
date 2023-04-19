@@ -1,0 +1,10 @@
+#greenRect{
+    width:2500px;
+    height:100px;
+    background:#73B744;
+}
+#whiteRect{
+    width:2500px;
+    height:25px;
+    background:white;
+}

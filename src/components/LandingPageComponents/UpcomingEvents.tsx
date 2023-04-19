@@ -1,7 +1,7 @@
 function UpcomingEvents(){
-    return <h1>
-  
-    </h1>
+    return <h2>
+      UPCOMING EVENTS
+    </h2>
   }
   
   export default UpcomingEvents;
