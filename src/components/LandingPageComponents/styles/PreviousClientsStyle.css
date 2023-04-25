@@ -1,4 +1,25 @@
 #prevClients{
-    max-width: 20%;
+    width: auto;
     height: auto;
+}
+
+#prev_client_text {
+    color: #73B744;
+    font-size: 35px;
+}
+
+#learn_more_button {
+    background-color: #403e3a;
+    color: white;
+    padding: 30px 50px 30px 50px;
+    font-size: 22px;
+    border-radius: 0px;
+}
+
+#white_space_clients {
+    width:1095px;
+    height:15px;
+    background:white;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,10 +1,14 @@
 #greenRect{
-    width:2500px;
+    width:1095px;
     height:100px;
     background:#73B744;
+    margin-left: auto;
+    margin-right: auto;
 }
 #whiteRect{
-    width:2500px;
+    width:1095px;
     height:25px;
     background:white;
+    margin-left: auto;
+    margin-right: auto;
 }

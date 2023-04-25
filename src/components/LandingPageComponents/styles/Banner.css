@@ -1,8 +1,18 @@
-.test {
+.banner_overlay {
+    margin-left: auto;
+    margin-right: auto;
     width: 1024px;
     height: 640px;
-    text-align: center;
     color: white;
     background: url("../pvd.jpeg");
     background-size: cover;
+    opacity: 0.7;
+    
+}
+
+.banner_text {
+    position: relative;
+    text-align: center;
+    top: 35%;
+    font-weight: normal;
 }
