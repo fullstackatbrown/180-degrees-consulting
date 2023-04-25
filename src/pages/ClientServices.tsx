@@ -5,7 +5,7 @@ import CurrentClients from "../components/ClientServicesComponents/CurrentClient
 import PreviousClients from "../components/ClientServicesComponents/PreviousClients";
 import Testimonials from "../components/ClientServicesComponents/Testimonials";
 
-export default function ClientServices(){
+export default function ClientServicesPage(){
   return (<div>
     <Header/>
     <ClientServicesBanner/>
