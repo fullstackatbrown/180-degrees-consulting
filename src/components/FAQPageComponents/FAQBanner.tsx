@@ -1,3 +1,4 @@
 export default function FAQBanner() {
-    return(<div></div>);
+    return(<div><h1> Frequently Asked Questions </h1>
+    </div>);
 }

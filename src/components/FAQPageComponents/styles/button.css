@@ -1,0 +1,10 @@
+#askUsAQuestion{
+    display: inline-block;
+    background-color: black;
+    padding: 20px;
+    height: 60px;
+    width: 250px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0;
+}
