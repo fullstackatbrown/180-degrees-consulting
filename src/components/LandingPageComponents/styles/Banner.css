@@ -1,0 +1,8 @@
+.test {
+    width: 1024px;
+    height: 640px;
+    text-align: center;
+    color: white;
+    background: url("../pvd.jpeg");
+    background-size: cover;
+}
