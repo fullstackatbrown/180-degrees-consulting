@@ -1,4 +1,3 @@
-import pvd from './pvd.jpeg'
 import './styles/Banner.css'
 
 function BannerImage(){
