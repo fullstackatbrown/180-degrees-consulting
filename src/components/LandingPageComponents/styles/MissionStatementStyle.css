@@ -1,0 +1,54 @@
+#missionStatementContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+#missionStatementSquare {
+    background: #DBEFCF;
+    border: 5px solid #72B843;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 20vw;
+    height: 20vw;
+    padding: 0 5% 0 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#missionStatementSquare::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: calc(1.5vw + 5px) calc(1.5vw + 5px) rgb(230, 230, 230);
+    z-index: -1;
+  }
+#missionStatementRectangle {
+    background: #DBEFCF;
+    max-width: 50%;
+    font-size: 2.2vw;
+    height: fit-content;
+    padding-left: 5%;
+    border: 5px solid #72B843;
+    transform: translate(-10%, 5vw);
+    margin-bottom: 8%;
+    box-shadow: 1.5vw 1.5vw rgb(230, 230, 230);
+    position:relative;
+    z-index: -1;
+}
+#squareText {
+    margin-bottom: 5px;
+}
+#peopleImage {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 15px;
+    min-height: 15px;
+}

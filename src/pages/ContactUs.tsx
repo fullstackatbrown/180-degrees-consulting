@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GetInTouch from "../components/ContactUsComponents/GetInTouch";
 
-function LandingPage() {
+function ContactUs() {
     return (<>
     <Header/>
     <GetInTouch/>
@@ -12,4 +12,4 @@ function LandingPage() {
     )
 }   
 
-export default LandingPage;
+export default ContactUs;

@@ -1,8 +1,25 @@
 .test {
-    width: 1024px;
-    height: 640px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
     text-align: center;
     color: white;
-    background: url("../pvd.jpeg");
-    background-size: cover;
+    overflow: hidden;
+}
+
+#pvd {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(65%);
+}
+
+#clubNameText {
+    position: absolute;
+    text-wrap: nowrap;
+    font-size: 5vw;
+    letter-spacing: 0.15rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

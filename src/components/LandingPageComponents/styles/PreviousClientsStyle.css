@@ -1,4 +1,7 @@
 #prevClients{
-    max-width: 20%;
-    height: auto;
+    max-width: 100%;
+}
+
+#prevClientsHeading{
+    color: #73B744;
 }

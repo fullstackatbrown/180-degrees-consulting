@@ -5,7 +5,7 @@ import BannerImage from "../components/ProspectiveMembersComponents/BannerImage"
 import Timeline from "../components/ProspectiveMembersComponents/Timeline"
 
 
-function LandingPage() {
+function ProspectiveMembers() {
     return (<>
     <Header/>
     <BannerImage/>
@@ -15,4 +15,4 @@ function LandingPage() {
     )
 }   
 
-export default LandingPage;
+export default ProspectiveMembers;
