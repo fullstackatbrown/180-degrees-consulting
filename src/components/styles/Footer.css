@@ -1,0 +1,43 @@
+#footer {
+    background-color: #242424;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#logo-180 {
+    width: 15%;
+    padding: 2.5%;
+    object-fit: scale-down;
+}
+
+#centralContainer {
+    width: 60%;
+}
+
+.footerText {
+    color: #4A5557;
+}
+
+#contactUsFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding: 2.5%;
+}
+
+#contactUsButton {
+    background-color: white;
+    color: black;
+    border-radius: 0;
+    font-size: 1.7vw;
+    width: 100%;
+}
+
+.socialIcons {
+    width: calc(100% / 4);
+}
