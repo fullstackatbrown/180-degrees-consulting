@@ -1,0 +1,52 @@
+#navbar-nav {
+    z-index:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+.Nav {
+    /* position:absolute; */
+    width: 10vw;
+    height: 50%;
+    left: 10vw;
+    top: 5vw;
+
+    /* Bold/14px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    /* or 129% */
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    letter-spacing: 0.3px;
+    text-align: center;
+
+    /* color: #160F0F; */
+}
+
+.LogoHeader {
+    display: flex;
+    /* flex-direction: row; */
+    align-items:center;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #eeeeee;
+    /* opacity: 0.5; */
+    /* Common grey background color */
+    padding: 10px;
+    max-width: 100vw;
+    /* Adjust padding as needed */
+}
+
+.Logo {
+    /* background-color: #160F0F; */
+    position:relative;
+    max-height: 5vw;
+    max-width: 100vw;
+    /* z-index: -1; */
+}
