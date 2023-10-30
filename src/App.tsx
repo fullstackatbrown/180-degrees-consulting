@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter,
+  NavLink,
+  RouterProvider,
+  Routes,
+  createBrowserRouter,
+} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "../styles/App.css";
 import Header from "./components/HeaderComponents/Header";
@@ -11,8 +18,25 @@ import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import ClientServices from "./pages/ClientServices";
 import ContactUs from "./pages/ContactUs";
+import ErrorPage from "./pages/Error";
 
 function App() {
+  const router = (
+    <BrowserRouter>
+      <header>
+        <h1></h1>
+      </header>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="team" element={<OurTeam />} />
+        <Route path="clients" element={<ClientServices />} />
+        <Route path="faq" element={<FAQPage />} />
+        <Route path="contact" element={<ContactUs />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
   // const router = createBrowserRouter([
   //   {
   //     element: <Header></Header>,
@@ -47,10 +71,11 @@ function App() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       {/* <AboutUs /> */}
       {/* <FAQPage></FAQPage> */}
       {/* <RouterProvider router={router} /> */}
+      {router}
       <Footer />
     </div>
   );

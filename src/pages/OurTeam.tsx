@@ -10,6 +10,7 @@ function LandingPage() {
   return (
     <>
       <Header />
+      Our Team
       <GroupPhoto />
       <ExecutiveBoard />
       <TeamLeads />

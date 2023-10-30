@@ -2,7 +2,7 @@ import HeaderLogo from "/src/images/HeaderLogo.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./style.css";
 
 function Header() {
@@ -19,73 +19,42 @@ function Header() {
       >
         <Container className="LogoHeader">
           <Navbar.Brand className="Logo">
-            {/* <img
-              className="Logo"
-              src={HeaderLogo}
-              alt="180 Degrees Consulting Brown"
-            ></img> */}
-            <img
-              className="Logo"
-              src={HeaderLogo}
-              alt="180 Degrees Consulting Brown"
-            ></img>
-          </Navbar.Brand>
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="Nav">
-              <Nav.Link>About Us</Nav.Link>
-            </Nav>
-            <Nav className="Nav">
-              <Nav.Link>Our Team</Nav.Link>
-            </Nav>
-            <Nav className="Nav">
-              <Nav.Link>Clients</Nav.Link>
-            </Nav>
-            <Nav className="Nav">
-              <Nav.Link>FAQ</Nav.Link>
-            </Nav>
-            <Nav className="Nav">
-              <Nav.Link>Contact Us</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-        {/* <Container className="LogoHeader">
-          <Navbar.Brand className="Logo">
-            <Link to="/">
+            <NavLink to="/">
               <img
                 className="Logo"
                 src={HeaderLogo}
-                alt="180 Degrees Consulting Brown"
+                alt="180 Degrees Consulting: Brown"
               ></img>
-            </Link>
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Collapse id="navbar-nav">
             <Nav className="Nav">
-              <Nav.Link>
-                <Link to="/AboutUs">About Us</Link>
-              </Nav.Link>
+              <NavLink to="/about" className="Nav">
+                About Us
+              </NavLink>
             </Nav>
             <Nav className="Nav">
-              <Nav.Link>
-                <Link to="/OurTeam">Our Team</Link>
-              </Nav.Link>
+              <NavLink to="/team" className="Nav">
+                Our Team
+              </NavLink>
             </Nav>
             <Nav className="Nav">
-              <Nav.Link>
-                <Link to="/ClientServices">Clients</Link>
-              </Nav.Link>
+              <NavLink to="/clients" className="Nav">
+                Clients
+              </NavLink>
             </Nav>
             <Nav className="Nav">
-              <Nav.Link>
-                <Link to="/FAQPage">FAQ</Link>
-              </Nav.Link>
+              <NavLink to="/faq" className="Nav">
+                FAQ
+              </NavLink>
             </Nav>
             <Nav className="Nav">
-              <Nav.Link>
-                <Link to="/ContactUs">Contact Us</Link>
-              </Nav.Link>
+              <NavLink to="/contact" className="Nav">
+                Contact Us
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
-        </Container> */}
+        </Container>
       </Navbar>
     </h1>
   );

@@ -6,10 +6,10 @@ import AboutUsBody from "../components/AboutUsComponents/AboutUsBody";
 function AboutUs() {
   return (
     <div className="Page" id="AboutUs">
-      {/* <Header /> */}
+      <Header />
       <AboutUsBanner />
       <AboutUsBody />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

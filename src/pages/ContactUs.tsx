@@ -7,6 +7,7 @@ function LandingPage() {
   return (
     <>
       <Header />
+      Contact Us
       <GetInTouch />
       <Footer />
     </>
