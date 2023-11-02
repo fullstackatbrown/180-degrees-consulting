@@ -37,37 +37,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-  // const router = createBrowserRouter([
-  //   {
-  //     element: <Header></Header>,
-  //     children: [
-  //       {
-  //         path: "/",
-  //         element: <AboutUs></AboutUs>,
-  //       },
-  //       {
-  //         path: "/AboutUs",
-  //         element: <AboutUs></AboutUs>,
-  //       },
-  //       {
-  //         path: "/OurTeam",
-  //         element: <OurTeam></OurTeam>,
-  //       },
-  //       {
-  //         path: "/ClientServices",
-  //         element: <ClientServices></ClientServices>,
-  //       },
-  //       {
-  //         path: "/FAQPage",
-  //         element: <FAQPage></FAQPage>,
-  //       },
-  //       {
-  //         path: "/ContactUs",
-  //         element: <ContactUs></ContactUs>,
-  //       },
-  //     ],
-  //   },
-  // ]);
 
   return (
     <div>
