@@ -1,0 +1,15 @@
+.testing {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+#campusPic {
+    position: relative;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: contrast(65%);
+}

@@ -1,12 +1,19 @@
 #root {
-  /* max-width: 1280px; */
-  /* margin: auto auto; */
-  /* padding: 0; */
   width: 100vw;
   max-width: 100vw;
   text-align: center;
+  margin:0;
 }
 
 .LogoHeader {
   max-width: 50%;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  background-color: #505050;
+  color: white;
 }

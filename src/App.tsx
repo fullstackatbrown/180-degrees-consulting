@@ -14,18 +14,18 @@ import Footer from "./components/Footer";
 
 import LandingPage from "./pages/LandingPage";
 import FAQPage from "./pages/FAQPage";
+
 import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import ClientServices from "./pages/ClientServices";
 import ContactUs from "./pages/ContactUs";
 import ErrorPage from "./pages/Error";
+import ProspectiveMembers from "./pages/ProspectiveMembers";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const router = (
     <BrowserRouter>
-      <header>
-        <h1></h1>
-      </header>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="about" element={<AboutUs />} />
@@ -40,10 +40,6 @@ function App() {
 
   return (
     <div>
-      {/* <Header /> */}
-      {/* <AboutUs /> */}
-      {/* <FAQPage></FAQPage> */}
-      {/* <RouterProvider router={router} /> */}
       {router}
       <Footer />
     </div>

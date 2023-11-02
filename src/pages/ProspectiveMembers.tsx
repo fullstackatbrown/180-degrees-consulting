@@ -4,15 +4,14 @@ import Footer from "../components/Footer";
 import BannerImage from "../components/ProspectiveMembersComponents/BannerImage";
 import Timeline from "../components/ProspectiveMembersComponents/Timeline";
 
-function LandingPage() {
-  return (
-    <>
-      <Header />
-      <BannerImage />
-      <Timeline />
-      <Footer />
+function ProspectiveMembers() {
+    return (<>
+    <Header/>
+    <BannerImage/>
+    <Timeline/>
+    <Footer/>
     </>
   );
 }
 
-export default LandingPage;
+export default ProspectiveMembers;
