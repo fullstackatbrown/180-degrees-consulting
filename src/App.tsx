@@ -40,7 +40,6 @@ function App() {
   return (
     <div>
       {router}
-      <Footer />
     </div>
   );
 }
