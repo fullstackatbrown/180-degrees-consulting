@@ -1,28 +1,46 @@
 import { useState } from "react";
+import {
+  BrowserRouter,
+  NavLink,
+  RouterProvider,
+  Routes,
+  createBrowserRouter,
+} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import "../styles/App.css";
-import Header from "./components/Header";
+import Header from "./components/HeaderComponents/Header";
+import Footer from "./components/Footer";
+
 import LandingPage from "./pages/LandingPage";
 import FAQPage from "./pages/FAQPage";
-import ContactUs from "./pages/ContactUs";
-import ClientServices from "./pages/ClientServices";
-import OurTeam from "./pages/OurTeam";
-import ProspectiveMembers from "./pages/ProspectiveMembers";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import AboutUs from "./pages/AboutUs";
+import OurTeam from "./pages/OurTeam";
+import ClientServices from "./pages/ClientServices";
+import ContactUs from "./pages/ContactUs";
+import ErrorPage from "./pages/Error";
+import ProspectiveMembers from "./pages/ProspectiveMembers";
 
 function App() {
-
-  return (
+  const router = (
     <BrowserRouter>
       <Routes>
-        <Route index element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="team" element={<OurTeam />} />
+        <Route path="clients" element={<ClientServices />} />
         <Route path="faq" element={<FAQPage />} />
-        <Route path="our-team" element={<OurTeam />} />
-        <Route path="contact-us" element={<ContactUs />} />
-        <Route path="client-services" element={<ClientServices />} />
-        <Route path="prospective-members" element={<ProspectiveMembers />} />
+        <Route path="contact" element={<ContactUs />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
+  );
+
+  return (
+    <div>
+      {router}
+    </div>
   );
 }
 
