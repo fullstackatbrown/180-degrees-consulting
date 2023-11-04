@@ -1,4 +1,4 @@
-.testing {
+#textBox {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -7,9 +7,8 @@
 }
 
 #campusPic {
-    position: relative;
     width:100%;
-    height:100%;
+    height:100vh;
     object-fit: cover;
     filter: contrast(65%);
 }
