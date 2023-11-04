@@ -13,7 +13,7 @@ function Footer(){
     <h3 className='footerText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
     </div>
     <div id="contactUsFooter">
-      <a href="./contact-us"><button id="contactUsButton">Contact Us</button></a>
+      <a href="./contact"><button id="contactUsButton">Contact Us</button></a>
       <div id="socials">
         <a href="https://www.facebook.com/180dcbrown"><img className='socialIcons' src={facebook}></img></a>
         <a href="https://www.instagram.com/brown180dc"><img className='socialIcons' src={instagram}></img></a>
