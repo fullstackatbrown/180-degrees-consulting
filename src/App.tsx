@@ -21,7 +21,6 @@ import ClientServices from "./pages/ClientServices";
 import ContactUs from "./pages/ContactUs";
 import ErrorPage from "./pages/Error";
 import ProspectiveMembers from "./pages/ProspectiveMembers";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const router = (
