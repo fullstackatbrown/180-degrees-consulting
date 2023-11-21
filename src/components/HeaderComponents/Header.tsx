@@ -29,11 +29,6 @@ function Header() {
           </Navbar.Brand>
           <Navbar.Collapse id="navbar-nav">
             <Nav className="Nav">
-              <NavLink to="/about" className="Nav">
-                About Us
-              </NavLink>
-            </Nav>
-            <Nav className="Nav">
               <NavLink to="/team" className="Nav">
                 Our Team
               </NavLink>

@@ -15,7 +15,6 @@ import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 import FAQPage from "./pages/FAQPage";
 
-import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import ClientServices from "./pages/ClientServices";
 import ContactUs from "./pages/ContactUs";
@@ -27,7 +26,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="about" element={<AboutUs />} />
         <Route path="team" element={<OurTeam />} />
         <Route path="clients" element={<ClientServices />} />
         <Route path="faq" element={<FAQPage />} />

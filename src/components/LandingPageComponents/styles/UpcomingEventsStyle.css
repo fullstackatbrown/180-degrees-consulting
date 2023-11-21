@@ -1,0 +1,48 @@
+.eventCard {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 65%;
+    margin-bottom: 50px;
+}
+
+.eventDate {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 15%;
+}
+
+.eventDay {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+
+.eventMonth {
+    margin-top: 0;
+    color: white;
+}
+
+.eventName {
+    color: #009647;
+    font-size: larger;
+}
+
+.rsvpLink {
+    padding-right: 5%;
+}
+
+.blackLink {
+    color: black;
+    font-weight: normal;
+    font-size: larger;
+}
