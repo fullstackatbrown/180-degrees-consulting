@@ -1,7 +1,7 @@
+import './styles/AboutUsStyle.css'
 import AboutUsPNG from "/src/images/AboutUsBody.png";
-import "./style.css";
 
-export default function AboutUsBody() {
+function AboutUs() {
   return (
     <div className="AboutBody">
       <h2 className="AboutMission">Our Mission</h2>
@@ -13,3 +13,5 @@ export default function AboutUsBody() {
     </div>
   );
 }
+
+export default AboutUs;

@@ -7,9 +7,6 @@ function PreviousClients(){
     return <div> <h3 id="prevClientsHeading">Previous Clients</h3> 
     <img src={prevClients} alt="previous clients" id="prevClients"/>
     <br/>
-    <button onClick={() => navigate("/about-us")}>
-       Learn About Our Services
-    </button>
     </div>
   }
   
