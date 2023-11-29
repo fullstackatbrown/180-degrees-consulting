@@ -2,21 +2,36 @@ import HeaderLogo from "/src/images/HeaderLogo.png";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./style.css";
+import { useEffect, useState } from "react";
 
 function Header() {
+  const [pageID, setPageID] = useState("Header");
+  const navigate = useNavigate();
+  /* Navigate to correct page, update state variable for pageID referring to where on the page to scroll to
+   */
+  const moveToPage = (id: string, path: string) => {
+    if (window.location.pathname !== path) {
+      navigate(path);
+    }
+    setPageID(id);
+  };
+
+  // Scroll to correct part of page
+  useEffect(() => {
+    if (pageID !== "") {
+      const element: HTMLElement | null = document.getElementById(pageID);
+      if (element !== null) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+      setPageID("");
+    }
+  }, [pageID]);
+
   return (
-    <h1>
-      <Navbar
-        expand="lg"
-        style={
-          {
-            // background: "#3C64B1",
-            // opacity: 0.06,
-          }
-        }
-      >
+    <h1 id="Header">
+      <Navbar expand="lg">
         <Container className="LogoHeader">
           <Navbar.Brand className="Logo">
             <NavLink to="/">
@@ -29,24 +44,59 @@ function Header() {
           </Navbar.Brand>
           <Navbar.Collapse id="navbar-nav">
             <Nav className="Nav">
-              <NavLink to="/team" className="Nav">
-                Our Team
-              </NavLink>
-            </Nav>
-            <Nav className="Nav">
-              <NavLink to="/clients" className="Nav">
+              <button
+                className="Nav"
+                onClick={() => moveToPage("LandingPageClients", "/")}
+              >
                 Clients
-              </NavLink>
+              </button>
+              {/* <NavLink onClick={() => scrollToHeader("")} className="Nav">
+                Clients
+              </NavLink> */}
             </Nav>
             <Nav className="Nav">
-              <NavLink to="/faq" className="Nav">
-                FAQ
-              </NavLink>
+              <button
+                className="Nav"
+                onClick={() => moveToPage("LandingPageUpcomingEvents", "/")}
+              >
+                Upcoming Events
+              </button>
+              {/* <NavLink to="/upcoming-events" className="Nav">
+                Upcoming Events
+              </NavLink> */}
             </Nav>
             <Nav className="Nav">
-              <NavLink to="/contact" className="Nav">
+              <button
+                className="Nav"
+                onClick={() => moveToPage("Header", "/team")}
+              >
+                Our Team
+              </button>
+              {/* <NavLink to="/team" className="Nav">
+                Our Team
+              </NavLink> */}
+            </Nav>
+            <Nav className="Nav">
+              <button
+                className="Nav"
+                onClick={() => moveToPage("Header", "/apply")}
+              >
+                Apply Now
+              </button>
+              {/* <NavLink to="/apply" className="Nav">
+                Apply Now
+              </NavLink> */}
+            </Nav>
+            <Nav className="Nav">
+              <button
+                className="Nav"
+                onClick={() => moveToPage("Header", "/contact")}
+              >
                 Contact Us
-              </NavLink>
+              </button>
+              {/* <NavLink to="/contact" className="Nav">
+                Contact Us
+              </NavLink> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

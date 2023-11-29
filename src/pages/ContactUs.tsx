@@ -5,12 +5,13 @@ import GetInTouch from "../components/ContactUsComponents/GetInTouch";
 import CampusImage from "../components/ContactUsComponents/CampusImage";
 
 function ContactUs() {
-    return (<>
-    <Header/>
-    <CampusImage/>
-    <GetInTouch/>
-    <Footer/>
-    </>
+  return (
+    <div id="PageTop">
+      {/* <Header/> */}
+      <CampusImage />
+      <GetInTouch />
+      {/* <Footer /> */}
+    </div>
   );
 }
 

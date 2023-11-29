@@ -16,30 +16,26 @@ import LandingPage from "./pages/LandingPage";
 import FAQPage from "./pages/FAQPage";
 
 import OurTeam from "./pages/OurTeam";
-import ClientServices from "./pages/ClientServices";
 import ContactUs from "./pages/ContactUs";
 import ErrorPage from "./pages/Error";
-import ProspectiveMembers from "./pages/ProspectiveMembers";
+import ApplyPage from "./pages/Apply";
 
 function App() {
   const router = (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="team" element={<OurTeam />} />
-        <Route path="clients" element={<ClientServices />} />
-        <Route path="faq" element={<FAQPage />} />
         <Route path="contact" element={<ContactUs />} />
+        <Route path="apply" element={<ApplyPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 
-  return (
-    <div>
-      {router}
-    </div>
-  );
+  return <div>{router}</div>;
 }
 
 export default App;

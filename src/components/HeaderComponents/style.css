@@ -10,10 +10,16 @@
 
 .Nav {
     /* position:absolute; */
-    width: 10vw;
+    width: 15vw;
     height: 50%;
     left: 10vw;
     /* top: 5vw; */
+    /* remove border outline when clicked */
+    outline: none;
+    :focus, :active, :hover {
+        outline: none;
+    }
+
 
     /* Bold/14px */
     font-family: 'Mulish';
@@ -29,6 +35,7 @@
     text-align: center; */
     letter-spacing: 0.3px;
     text-align: center;
+    background-color: white;
 }
 
 .LogoHeader {
