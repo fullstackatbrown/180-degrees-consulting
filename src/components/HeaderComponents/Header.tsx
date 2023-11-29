@@ -46,6 +46,28 @@ function Header() {
             <Nav className="Nav">
               <button
                 className="Nav"
+                onClick={() => moveToPage("LandingPageAboutUs", "/")}
+              >
+                About Us
+              </button>
+              {/* <NavLink to="/team" className="Nav">
+                Our Team
+              </NavLink> */}
+            </Nav>
+            <Nav className="Nav">
+              <button
+                className="Nav"
+                onClick={() => moveToPage("Header", "/team")}
+              >
+                Our Team
+              </button>
+              {/* <NavLink to="/team" className="Nav">
+                Our Team
+              </NavLink> */}
+            </Nav>
+            <Nav className="Nav">
+              <button
+                className="Nav"
                 onClick={() => moveToPage("LandingPageClients", "/")}
               >
                 Clients
@@ -63,17 +85,6 @@ function Header() {
               </button>
               {/* <NavLink to="/upcoming-events" className="Nav">
                 Upcoming Events
-              </NavLink> */}
-            </Nav>
-            <Nav className="Nav">
-              <button
-                className="Nav"
-                onClick={() => moveToPage("Header", "/team")}
-              >
-                Our Team
-              </button>
-              {/* <NavLink to="/team" className="Nav">
-                Our Team
               </NavLink> */}
             </Nav>
             <Nav className="Nav">

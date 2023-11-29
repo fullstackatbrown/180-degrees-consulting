@@ -10,9 +10,9 @@
 
 .Nav {
     /* position:absolute; */
-    width: 15vw;
+    width: 13vw;
     height: 50%;
-    left: 10vw;
+    /* left: 10vw; */
     /* top: 5vw; */
     /* remove border outline when clicked */
     outline: none;
@@ -25,7 +25,7 @@
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 18px;
     color:black;
     opacity: 1;

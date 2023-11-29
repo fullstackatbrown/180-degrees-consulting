@@ -1,9 +1,9 @@
-import './styles/AboutUsStyle.css'
+import "./styles/AboutUsStyle.css";
 import AboutUsPNG from "/src/images/AboutUsBody.png";
 
 function AboutUs() {
   return (
-    <div className="AboutBody">
+    <div id="LandingPageAboutUs" className="AboutBody">
       <h2 className="AboutMission">Our Mission</h2>
       <img
         className="AboutImage"

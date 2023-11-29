@@ -30,7 +30,7 @@ function UpcomingEvents() {
 
   return (
     <div id="LandingPageUpcomingEvents">
-      <h2>UPCOMING EVENTS</h2>
+      <h2 id="Heading">UPCOMING EVENTS</h2>
       {events.map((evt) => (
         <div className="eventCard">
           <div className="eventDate">

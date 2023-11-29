@@ -6,8 +6,7 @@ function PreviousClients() {
   const navigate = useNavigate();
   return (
     <div id="LandingPageClients">
-      {" "}
-      <h3 id="prevClientsHeading">Previous Clients</h3>
+      <h3 id="Heading">Previous Clients</h3>
       <img src={prevClients} alt="previous clients" id="prevClients" />
       <br />
     </div>

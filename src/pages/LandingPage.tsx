@@ -11,14 +11,12 @@ import Footer from "../components/Footer";
 function LandingPage() {
   return (
     <>
-      {/* <Header /> */}
       <BannerImage />
       <MissionStatement />
       <AboutUs />
       <UpcomingEvents />
       <PreviousClients />
       <Questions />
-      {/* <Footer /> */}
     </>
   );
 }
