@@ -19,6 +19,8 @@ import OurTeam from "./pages/OurTeam";
 import ContactUs from "./pages/ContactUs";
 import ErrorPage from "./pages/Error";
 import ApplyPage from "./pages/Apply";
+import ProspectiveMembers from "./pages/ProspectiveMembers";
+import { ClientServices } from "./pages/ClientServices";
 
 function App() {
   const router = (
@@ -27,8 +29,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="team" element={<OurTeam />} />
+        <Route path="clients" element={<ClientServices />} />
         <Route path="contact" element={<ContactUs />} />
-        <Route path="apply" element={<ApplyPage />} />
+        <Route path="apply" element={<ProspectiveMembers />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

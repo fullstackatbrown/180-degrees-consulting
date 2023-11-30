@@ -10,11 +10,9 @@ import SeniorAdvisers from "../components/OurTeamComponents/SeniorAdvisers";
 function OurTeam() {
   return (
     <div id="OurTeamPageTop">
-      {/* <Header/> */}
       <h1>Our Team</h1>
       <GroupPhoto />
       <SeniorAdvisers />
-      {/* <Footer/> */}
     </div>
   );
 }
