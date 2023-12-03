@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { firestore } from "../../firebaseConfig";
+import { firestore } from "../../firebase/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import "./styles/UpcomingEventsStyle.css";
 

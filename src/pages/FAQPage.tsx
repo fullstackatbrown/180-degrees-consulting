@@ -6,10 +6,10 @@ import FAQTextConvo from "../components/FAQPageComponents/FAQTextConvo";
 export default function FAQPage() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <FAQBanner />
       <FAQTextConvo />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

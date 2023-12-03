@@ -68,7 +68,7 @@ function Header() {
             <Nav className="Nav">
               <button
                 className="Nav"
-                onClick={() => moveToPage("LandingPageClients", "/")}
+                onClick={() => moveToPage("", "/clients")}
               >
                 Clients
               </button>

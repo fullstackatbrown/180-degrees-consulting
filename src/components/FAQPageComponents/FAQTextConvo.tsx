@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import FAQtextMessages from "./FAQtextmessages.png";
 import "./styles/button.css";
 
 export default function FAQTextConvo() {
+  const navigate = useNavigate();
   return (
     <div>
       <img
@@ -13,7 +15,11 @@ export default function FAQTextConvo() {
       />
       <br></br>
       <br></br>
-      <button id="askUsAQuestion">Ask Us a Question</button>
+      <button id="askUsAQuestion" onClick={navigate("/contact")}>
+        Ask Us a Question
+      </button>
+      =<br></br>
+      <br></br>
     </div>
   );
 }

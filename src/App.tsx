@@ -32,6 +32,7 @@ function App() {
         <Route path="clients" element={<ClientServices />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="apply" element={<ProspectiveMembers />} />
+        <Route path="faq" element={<FAQPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
