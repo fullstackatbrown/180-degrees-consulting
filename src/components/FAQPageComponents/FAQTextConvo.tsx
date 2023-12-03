@@ -15,10 +15,10 @@ export default function FAQTextConvo() {
       />
       <br></br>
       <br></br>
-      <button id="askUsAQuestion" onClick={navigate("/contact")}>
+      <button id="askUsAQuestion" onClick={() => navigate("/contact")}>
         Ask Us a Question
       </button>
-      =<br></br>
+      <br></br>
       <br></br>
     </div>
   );
