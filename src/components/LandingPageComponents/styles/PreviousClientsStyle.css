@@ -23,3 +23,9 @@
 
     color: #93B769;
 }
+
+#spacerDiv {
+    width: 100%;
+    height: 40px;
+    background-color: #72B745;
+}

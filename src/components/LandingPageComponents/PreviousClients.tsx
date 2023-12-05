@@ -9,6 +9,7 @@ function PreviousClients() {
       <h3 id="Heading">Previous Clients</h3>
       <img src={prevClients} alt="previous clients" id="prevClients" />
       <br />
+      <div id="spacerDiv"/>
     </div>
   );
 }
