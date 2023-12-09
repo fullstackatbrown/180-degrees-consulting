@@ -10,6 +10,12 @@
     margin-bottom: 50px;
 }
 
+@media all and (max-width: 750px) {
+    .eventCard {
+        width: 90%;
+    }
+}
+
 .eventDate {
     display: flex;
     flex-direction: column;
@@ -45,6 +51,25 @@
     color: black;
     font-weight: normal;
     font-size: larger;
+}
+
+#LandingPageUpcomingEvents {
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+    background-color: green;
+}
+
+#upcomingEventsBg {
+    margin: auto;
+    padding-bottom: 5%;
+    width: 97%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#upcomingEventsText {
+    padding: 2.5%;
+    color: black;
 }
 
 #Heading {

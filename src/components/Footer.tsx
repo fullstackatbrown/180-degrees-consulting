@@ -12,15 +12,13 @@ function Footer() {
       <div id="centralContainer">
         <h2 className="footerText">180 Degrees Consulting</h2>
         <h3 className="footerText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Empowering non-profits and social enterprises through affordable and high-quality strategic and operational assistance for over a decade.
         </h3>
       </div>
       <div id="contactUsFooter">
         <a href="./contact">
           <button id="contactUsButton">Contact Us</button>
         </a>
-        <p></p>
         <div id="socials">
           <a href="https://www.facebook.com/180dcbrown">
             <img className="socialIcons" src={facebook}></img>

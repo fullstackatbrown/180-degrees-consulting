@@ -1,7 +1,6 @@
 import { render } from "react-dom";
 import Header from "../components/HeaderComponents/Header";
 import BannerImage from "../components/LandingPageComponents/BannerImage";
-import Questions from "../components/LandingPageComponents/Questions";
 import MissionStatement from "../components/LandingPageComponents/MissionStatement";
 import AboutUs from "../components/LandingPageComponents/AboutUs";
 import PreviousClients from "../components/LandingPageComponents/PreviousClients";
@@ -16,7 +15,6 @@ function LandingPage() {
       <AboutUs />
       <UpcomingEvents />
       <PreviousClients />
-      <Questions />
     </>
   );
 }
