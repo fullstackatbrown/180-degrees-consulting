@@ -4,7 +4,6 @@
         height: 100vh;
         text-align: center;
         color: white;
-        overflow: hidden;
 }
 
 #pvd {
@@ -16,7 +15,6 @@
 
 #clubNameText {
         position: absolute;
-        text-wrap: nowrap;
         font-size: 5vw;
         letter-spacing: 0.15rem;
         top: 40%;
@@ -39,7 +37,7 @@
 #Heading {
         /* border: 3px solid green; */
         margin: auto;
-        padding-top: 2.5%;
+        padding-top: 20vh;
         /* padding: 20px; */
         position: relative;
         width: 50vw;
@@ -71,35 +69,15 @@
         grid-template-columns: repeat(2, 1fr);
         /* Two columns with equal width */
         row-gap: 5vh;
-        column-gap: 0vw;
         /* Adjust as needed */
 }
 
-/* .card-container {
-        position: relative;
-        margin:auto;
-        height: 40vh;
-        width: 40vw;
-        padding-bottom: 15vh;
-        overflow: visible;
-} */
-
 .card {
         position: relative;
-        margin: auto;
+        /* margin: auto; */
         /* max-width: 60vw; */
-        height: 40vh;
-        width: 40vw;
-        padding-bottom: 15vh;
-}
-
-.card-expanded {
-        position: relative;
-        margin: auto;
-        /* max-width: 60vw; */
-        height: 100vh;
-        width: 40vw;
-        padding-bottom: 15vh;
+        /* height: 40vh; */
+        /* width: 40vw; */
 }
 
 .card-2 {
@@ -110,6 +88,11 @@
 }
 
 .logo {
-        max-height: 100%;
+        max-height: 40vh;
         max-width: 100%;
+}
+
+.description {
+        line-height: 1.5;
+        word-spacing: 1.5px;
 }

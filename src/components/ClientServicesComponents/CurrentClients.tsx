@@ -13,10 +13,12 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ref } from "firebase/storage";
 import { getFirebase } from "../../firebase/getFirebase";
 import "./style.css";
+import { ClientCard } from "./ClientCard";
 
 interface Client {
   name: string;
   logo: string;
+  description: string;
 }
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -61,45 +63,13 @@ export function CurrentClients() {
       <h2 id="Heading">Current Clients</h2>
       <div className="grid-container">
         {currentClients.map((client) => (
-          <div className="card-container">
-            <Card className="card">
-              <h3>{client.name}</h3>
-              <img className="logo" src={client.logo} alt={client.name} />
-            </Card>
-          </div>
+          <ClientCard client={client} />
         ))}
       </div>
       <h1></h1>
       <div>
-        {oddClient !== undefined ? (
-          <div className="card-container">
-            <Card className="card">
-              <h3>{oddClient.name}</h3>
-              <img className="logo" src={oddClient.logo} alt={oddClient.name} />
-              <CardActions disableSpacing>
-                <ExpandMore
-                  expand={expanded}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                >
-                  <ExpandMoreIcon />
-                </ExpandMore>
-              </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                  <h1>Blah Blah BLah</h1>
-                  <h1>Blah Blah BLah</h1>
-                  <h1>Blah Blah BLah</h1>
-                  <h1>Blah Blah BLah</h1>
-                  <h1>Blah Blah BLah</h1>
-                </CardContent>
-              </Collapse>
-            </Card>
-          </div>
-        ) : (
-          <></>
-        )}
+        <></>
+        {oddClient !== undefined ? <ClientCard client={oddClient} /> : <></>}
       </div>
     </div>
   );
