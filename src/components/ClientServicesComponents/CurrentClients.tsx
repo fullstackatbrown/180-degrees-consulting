@@ -1,12 +1,15 @@
 import { DocumentReference, doc, getDoc } from "firebase/firestore";
 import { firestore, storage } from "../../firebase/firebaseConfig";
 import { useEffect, useState } from "react";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
+import { Box, Card, Collapse } from "@mui/material";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
+import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import { ref } from "firebase/storage";
 import { getFirebase } from "../../firebase/getFirebase";
 import "./style.css";
@@ -16,12 +19,38 @@ interface Client {
   logo: string;
 }
 
+interface ExpandMoreProps extends IconButtonProps {
+  expand: boolean;
+}
+
+const ExpandMore = styled((props: ExpandMoreProps) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+  marginLeft: "auto",
+  transition: theme.transitions.create("transform", {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
+
 export function CurrentClients() {
   const [currentClients, setCurrentClients] = useState<Client[]>([]);
+  const [oddClient, setOddClient] = useState<Client | undefined>(undefined);
+  const [expanded, setExpanded] = useState<boolean>(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
 
   useEffect(() => {
     getFirebase("clients", "current-clients", "client-array").then(
       (field: Client[]) => {
+        if (field.length % 2 === 1) {
+          setOddClient(field.pop());
+        } else {
+          setOddClient(undefined);
+        }
         setCurrentClients(field);
       }
     );
@@ -30,15 +59,48 @@ export function CurrentClients() {
   return (
     <div>
       <h2 id="Heading">Current Clients</h2>
-      {currentClients.map((client) => (
-        <>
-          <Card className="card">
-            <h3>{client.name}</h3>
-            <img src={client.logo} alt={client.name} />
-          </Card>
-          <b>_</b>
-        </>
-      ))}
+      <div className="grid-container">
+        {currentClients.map((client) => (
+          <div className="card-container">
+            <Card className="card">
+              <h3>{client.name}</h3>
+              <img className="logo" src={client.logo} alt={client.name} />
+            </Card>
+          </div>
+        ))}
+      </div>
+      <h1></h1>
+      <div>
+        {oddClient !== undefined ? (
+          <div className="card-container">
+            <Card className="card">
+              <h3>{oddClient.name}</h3>
+              <img className="logo" src={oddClient.logo} alt={oddClient.name} />
+              <CardActions disableSpacing>
+                <ExpandMore
+                  expand={expanded}
+                  onClick={handleExpandClick}
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                >
+                  <ExpandMoreIcon />
+                </ExpandMore>
+              </CardActions>
+              <Collapse in={expanded} timeout="auto" unmountOnExit>
+                <CardContent>
+                  <h1>Blah Blah BLah</h1>
+                  <h1>Blah Blah BLah</h1>
+                  <h1>Blah Blah BLah</h1>
+                  <h1>Blah Blah BLah</h1>
+                  <h1>Blah Blah BLah</h1>
+                </CardContent>
+              </Collapse>
+            </Card>
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
     </div>
   );
 }

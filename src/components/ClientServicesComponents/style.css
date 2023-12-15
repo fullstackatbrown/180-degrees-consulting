@@ -66,11 +66,40 @@
         background-color: #93B769;
 }
 
+.grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns with equal width */
+        row-gap: 5vh;
+        column-gap: 0vw;
+        /* Adjust as needed */
+}
+
+/* .card-container {
+        position: relative;
+        margin:auto;
+        height: 40vh;
+        width: 40vw;
+        padding-bottom: 15vh;
+        overflow: visible;
+} */
+
 .card {
         position: relative;
         margin: auto;
-        max-width: 50vw;
-        padding-bottom: 5vh;
+        /* max-width: 60vw; */
+        height: 40vh;
+        width: 40vw;
+        padding-bottom: 15vh;
+}
+
+.card-expanded {
+        position: relative;
+        margin: auto;
+        /* max-width: 60vw; */
+        height: 100vh;
+        width: 40vw;
+        padding-bottom: 15vh;
 }
 
 .card-2 {
@@ -80,3 +109,7 @@
         padding-bottom: 5vh;
 }
 
+.logo {
+        max-height: 100%;
+        max-width: 100%;
+}
