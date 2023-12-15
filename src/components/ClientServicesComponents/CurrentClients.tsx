@@ -61,7 +61,7 @@ export function CurrentClients() {
   return (
     <div>
       <h2 id="Heading">Current Clients</h2>
-      <div className="grid-container">
+      <div className="current-grid-container">
         {currentClients.map((client) => (
           <ClientCard client={client} />
         ))}

@@ -62,14 +62,14 @@
         position: relative;
         color: white;
         background-color: #93B769;
+        width: 15vw;
+        height: 7vh;
 }
 
-.grid-container {
+.current-grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns with equal width */
         row-gap: 5vh;
-        /* Adjust as needed */
 }
 
 .card {
@@ -80,14 +80,7 @@
         /* width: 40vw; */
 }
 
-.card-2 {
-        position: relative;
-        margin: auto;
-        max-width: 50vw;
-        padding-bottom: 5vh;
-}
-
-.logo {
+.current-logo {
         max-height: 40vh;
         max-width: 100%;
 }
@@ -95,4 +88,29 @@
 .description {
         line-height: 1.5;
         word-spacing: 1.5px;
+}
+
+.previous-card {
+        position: relative;
+        margin: auto;
+        max-width: 33vw;
+        min-width: 20vw;
+        padding: 2.5vh;
+}
+
+.previous-logo {
+        max-height: 10vh;
+        max-width: 100%;
+}
+
+.image-container {
+        row-gap: 10vh;
+        padding-bottom: 10vh;
+        display: flex;
+        justify-content: center;
+        /* Center content horizontally */
+        align-items: center;
+        /* Center content vertically */
+        flex-wrap: wrap;
+        /* Allow items to wrap to the next line */
 }

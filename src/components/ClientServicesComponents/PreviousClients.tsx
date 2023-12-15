@@ -22,15 +22,20 @@ export function PreviousClients() {
   return (
     <div>
       <h2 id="Heading">Previous Clients</h2>
-      {previousClients.map((client) => (
-        <>
-          <Card className="card-2">
-            {/* <h3>{client.name}</h3> */}
-            <img src={client.logo} alt={client.name} />
-          </Card>
-          <b>_</b>
-        </>
-      ))}
+      <div className="image-container">
+        {previousClients.map((client) => (
+          <>
+            <Card className="previous-card">
+              {/* <h3>{client.name}</h3> */}
+              <img
+                className="previous-logo"
+                src={client.logo}
+                alt={client.name}
+              />
+            </Card>
+          </>
+        ))}
+      </div>
     </div>
   );
 }

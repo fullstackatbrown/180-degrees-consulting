@@ -66,7 +66,11 @@ export function ClientCard(props: ClientProps) {
       }}
     >
       {/* <h3>{props.client.name}</h3> */}
-      <img className="logo" src={props.client.logo} alt={props.client.name} />
+      <img
+        className="current-logo"
+        src={props.client.logo}
+        alt={props.client.name}
+      />
       <CardActions disableSpacing>
         <ExpandMore
           expand={expanded}
